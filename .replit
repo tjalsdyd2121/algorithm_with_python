@@ -1,5 +1,5 @@
 modules = ["python-3.12"]
-run = "python jump_to_python/example/indexing.py"
+run = "python jump_to_python/ch.2:data_type/ch.2-3:list/list_operation.py"
 [nix]
 channel = "stable-23_11"
 
