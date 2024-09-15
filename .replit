@@ -1,5 +1,6 @@
 modules = ["python-3.12"]
-run = "python jump_to_python/ch.2:data_type/ch.2-5:dictionary/dictionary_methods.py"
+
+run = "python jump_to_python/ch.2:data_type/ch.2-7:bool/bool.py"
 [nix]
 channel = "stable-23_11"
 

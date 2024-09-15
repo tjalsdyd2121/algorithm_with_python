@@ -6,6 +6,7 @@ print(a.count('p'))
 b = "Python is the best choice"
 print(b.find('t'))
 print(b.find('k'))
+# find returns -1 if there is no correct char.
 
 print(b.index('t'))
 # print(b.index('k'))

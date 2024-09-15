@@ -22,8 +22,9 @@ print(d)
 # list methods
 d.append(1)
 print(d)
-# d.append([12,13]) append로는 어떠한 data type도 추가 가능.
-d.sort()
+d.append([12,13]) 
+# append로는 어떠한 data type도 추가 가능.
+# d.sort()
 print(d)
 d.reverse()
 print(d)
