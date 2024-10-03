@@ -1,6 +1,6 @@
 modules = ["python-3.12"]
 
-run = "python jump_to_python/ch.3:control_statement/ch.3-3:for/for.py"
+run = "python BOJ_study/week_1/1260.py"
 [nix]
 channel = "stable-23_11"
 
