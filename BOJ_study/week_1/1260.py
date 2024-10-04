@@ -1,3 +1,4 @@
+from copy import copy
 # input frist line
 vertex, edge, start_vertex = map(int, input().split())
 
@@ -18,6 +19,7 @@ for q in range(0, edge):
   adj_matrix[from_][to_] = 1
   adj_matrix[to_][from_] = 1
 
+adj_matrix_ = adj_matrix.copy()
 # DFS with stack
 DFS_ans = []
 
@@ -38,3 +40,25 @@ while stack != []:
       stack.append(q)
       
 print(*DFS_ans)
+
+visit = [0 for q in range(vertex + 1)]
+
+# BFS with Queue
+BFS_ans = []
+
+qu = [start_vertex]
+cur_vertex = start_vertex
+while qu != []: 
+  cur_vertex = qu[0]
+  for i in range(vertex+1):
+    if (adj_matrix_[cur_vertex][i] == 1) & (visit[i] == 0):
+      if i not in qu:
+        qu.append(i)
+
+  del qu[0]
+  BFS_ans.append(cur_vertex)
+  visit[cur_vertex] = 1
+  
+
+print(*BFS_ans)
+  
