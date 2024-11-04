@@ -1,6 +1,6 @@
 modules = ["python-3.12"]
 
-run = "python BOJ_study/week_1/1260.py"
+run = "python BOJ_study/week_3/1920.py"
 [nix]
 channel = "stable-23_11"
 
